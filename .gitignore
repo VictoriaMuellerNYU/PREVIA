@@ -1,2 +1,4 @@
 */tokens.json
-*/*pycache*
+*/__pycache__/
+__pycache__/
+*.pyc
