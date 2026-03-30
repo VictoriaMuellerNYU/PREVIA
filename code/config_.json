@@ -1,0 +1,11 @@
+{
+    "computer" : {
+        "base_path" :"path/to/PREVIA"
+    },
+    "hpc" : {
+        "base_path" :"path/to/PREVIA",
+        "llama33_70B_path" : "path/to/Meta-Llama-3-3-70B-Instruct",
+        "mistral_large_path" : "path/to/Mistral-Large-Instruct-2411",
+        "deepseek_70B_path" : "path/to/Deepseek_70"
+    }
+}
