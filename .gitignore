@@ -1,4 +1,4 @@
-*/tokens.json
-*/__pycache__/
+src/tokens.json
+src/__pycache__/
 __pycache__/
 *.pyc
