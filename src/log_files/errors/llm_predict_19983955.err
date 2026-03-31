@@ -243,3 +243,15 @@ WARNING:accelerate.utils.other:Detected kernel version 4.18.0, which is below th
 Batches:  18%|█▊        | 103/580 [1:12:29<7:43:21, 58.28s/it]INFO:LLMModel:Input token length: 255
 Batches:  18%|█▊        | 104/580 [1:12:59<6:35:02, 49.79s/it]INFO:LLMModel:Input token length: 267
 Batches:  18%|█▊        | 105/580 [1:13:38<6:07:06, 46.37s/it]INFO:LLMModel:Input token length: 262
+Batches:  18%|█▊        | 106/580 [1:14:12<5:38:09, 42.80s/it]INFO:LLMModel:Input token length: 243
+Batches:  18%|█▊        | 107/580 [1:14:46<5:16:07, 40.10s/it]INFO:LLMModel:Input token length: 258
+Batches:  19%|█▊        | 108/580 [1:15:24<5:09:22, 39.33s/it]INFO:LLMModel:Input token length: 255
+Batches:  19%|█▉        | 109/580 [1:16:00<5:01:32, 38.41s/it]INFO:LLMModel:Input token length: 262
+Batches:  19%|█▉        | 110/580 [1:16:35<4:54:08, 37.55s/it]INFO:LLMModel:Input token length: 296
+Batches:  19%|█▉        | 111/580 [1:17:28<5:29:25, 42.14s/it]INFO:LLMModel:Input token length: 283
+Batches:  19%|█▉        | 112/580 [1:18:13<5:34:56, 42.94s/it]INFO:LLMModel:Input token length: 251
+Batches:  19%|█▉        | 113/580 [1:18:55<5:31:46, 42.63s/it]INFO:LLMModel:Input token length: 250
+Batches:  20%|█▉        | 114/580 [1:19:43<5:43:01, 44.17s/it]INFO:LLMModel:Input token length: 272
+Batches:  20%|█▉        | 115/580 [1:20:17<5:18:45, 41.13s/it]INFO:LLMModel:Input token length: 249
+Batches:  20%|██        | 116/580 [1:20:47<4:53:47, 37.99s/it]INFO:LLMModel:Input token length: 260
+Batches:  20%|██        | 117/580 [1:21:17<4:33:39, 35.46s/it]INFO:LLMModel:Input token length: 252
