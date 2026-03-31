@@ -13,3 +13,5 @@ WARNING:accelerate.utils.other:Detected kernel version 4.18.0, which is below th
 Batches:  60%|██████    | 6/10 [04:53<03:06, 46.54s/it]INFO:LLMModel:Input token length: 1707
 Batches:  70%|███████   | 7/10 [05:48<02:27, 49.31s/it]INFO:LLMModel:Input token length: 2071
 Batches:  80%|████████  | 8/10 [06:50<01:46, 53.39s/it]INFO:LLMModel:Input token length: 3039
+Batches:  90%|█████████ | 9/10 [08:10<01:01, 61.73s/it]INFO:LLMModel:Input token length: 814
+Batches: 100%|██████████| 10/10 [08:15<00:00, 44.06s/it]Batches: 100%|██████████| 10/10 [08:15<00:00, 49.51s/it]

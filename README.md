@@ -55,6 +55,20 @@ The **zero-shot baseline** collapses this into a single LLM pass with all availa
 
 ---
 
+## Models
+
+PREVIA uses open-weight LLMs from Hugging Face, run locally with 4-bit quantisation (bitsandbytes). No data is sent to external APIs.
+
+| Pipeline role | Model | Parameters | License | Hugging Face |
+|---|---|---|---|---|
+| Layer 1 — Risk assessor A | Llama 3.3 70B Instruct | 70B | [Llama 3.3 Community](https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/LICENSE) | [meta-llama/Llama-3.3-70B-Instruct](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct) |
+| Layer 1 — Risk assessor B | Mistral Large Instruct 2411 | 123B | [Mistral Research License](https://mistral.ai/licenses/MRL-0.1.md) | [mistralai/Mistral-Large-Instruct-2411](https://huggingface.co/mistralai/Mistral-Large-Instruct-2411) |
+| Layer 2 — Summarizer | DeepSeek-R1-Distill-Llama-70B | 70B | [MIT](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/blob/main/LICENSE) | [deepseek-ai/DeepSeek-R1-Distill-Llama-70B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B) |
+| Layer 3 — Final assessor | Mistral Large Instruct 2411 | 123B | [Mistral Research License](https://mistral.ai/licenses/MRL-0.1.md) | [mistralai/Mistral-Large-Instruct-2411](https://huggingface.co/mistralai/Mistral-Large-Instruct-2411) |
+| Zero-shot baseline | Configurable (default: Mistral Large) | — | — | See above |
+
+---
+
 ## Project structure
 
 ```
