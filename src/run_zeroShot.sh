@@ -15,5 +15,4 @@ eval "$(conda shell.bash hook)"
 conda activate llm_predict
 
 # Your actual job command(s) go here
-python /gpfs/data/schultebrauckslab/Users/muellv01/PREVIA/src/code/zero_shot_pipeline.py
-
+python /gpfs/data/schultebrauckslab/Users/muellv01/PREVIA/src/code/zero_shot_pipeline.py --llm="llama33_70B"

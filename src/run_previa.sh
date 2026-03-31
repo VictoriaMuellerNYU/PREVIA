@@ -4,7 +4,7 @@
 #SBATCH --ntasks=1	
 #SBATCH --cpus-per-task=16
 #SBATCH --mem=128GB
-#SBATCH --time=0-3:00:00
+#SBATCH --time=0-12:00:00
 #SBATCH --gres=gpu:a100:3                   	# uses 2 GPUs - 1 node is sufficient
 #SBATCH --output=log_files/logs/llm_predict_%j.log	
 #SBATCH --error=log_files/errors/llm_predict_%j.err 

@@ -54,7 +54,7 @@ class PreviaConfig:
     hf_token: str
 
     # Data
-    file_end_name: str = "llm_test"
+    file_end_name: str = "llm_CAPS_PCL1m_n145_allAvailData"
     transcript_col: str = "text_whisper"
     demo_columns: tuple[str, ...] = ("age", "sex_at_birth", "trauma_type")
 
@@ -353,9 +353,11 @@ def run_previa_from_cache(
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="PREVIA three-layer LLM pipeline")
-    p.add_argument("--config-dir", type=str, default="..", help="Directory with config.json and tokens.json")
+    p.add_argument("--config-dir", type=str, 
+                default=str(Path(__file__).parent.parent),
+                help="Directory with config.json and tokens.json")
     p.add_argument("--outcome", choices=["clinical", "subclinical"], default="clinical")
-    p.add_argument("--file-end-name", default="llm_test", help="Suffix identifying the input CSV")
+    p.add_argument("--file-end-name", default="llm_CAPS_PCL1m_n145_allAvailData", help="Suffix identifying the input CSV")
     p.add_argument("--skip-layer1", action="store_true", help="Load cached Layer 1 results")
     p.add_argument("--skip-layer2", action="store_true", help="Load cached Layer 1+2 results")
     p.add_argument("--no-demographics", dest="include_demographics", action="store_false")

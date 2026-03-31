@@ -1,6 +1,6 @@
 {
 
-"zero_shot_clinical" : [
+"zero_shot_clinical_noDemo" : [
 
   { 
     "type": "zero_shot",
@@ -14,6 +14,14 @@
   { 
     "type": "zero_shot",
     "user": "Below is a naturalistic, unstructured trauma narrative, spoken by a patient in the Emergency Department (ED) shortly after experiencing a traumatic event. The patient is describing, in their own words, what happened and what brought them to the ED today. Evaluate whether the patient experienced early post-traumatic stress symptoms in the ED and/or peri-traumatic symptoms, as well as identify potential risk and protective factors from the narrative. Based on your findings, evaluate the likelihood that this patient will develop PTSD in the next month and assign a PTSD risk score from 0 to 100, where 0 represents negligible risk and 100 represents very high risk. Consider both full and sub-clinical PTSD presentations, especially when significant symptoms are present but do not meet full diagnostic thresholds. Adjust the risk score to reflect this dimensionality. **Note: Acute distress after experiencing a traumatic event is normal and does not necessarily indicate a higher PTSD risk.** Provide a justification for your score, referencing specific features and reasoning from empirical knowledge.\n\nOutput Format:\nPTSD risk score: \"[0-100]\"\nExplanation: \"one short sentence, no filler words\"\n\n**WARNING:** Any other output format is incorrect.",
+    "system": "You are an AI assistant specializing in trauma-related mental health disorders. Carefully analyze the patient's trauma narrative. Your response must be strictly in the required output format with no extra text, comments, or explanations. Responses must be concise, factual, and only include information explicitly supported by the narrative."
+  }
+],
+"zero_shot_clinical" : [
+
+  { 
+    "type": "zero_shot",
+    "user": "Below is a naturalistic, unstructured trauma narrative, spoken by a patient in the Emergency Department (ED) shortly after experiencing a traumatic event. The patient is describing, in their own words, what happened and what brought them to the ED today. Evaluate whether the patient experienced early post-traumatic stress symptoms in the ED and/or peri-traumatic symptoms, as well as identify potential risk and protective factors from the narrative. You are also given structured patient info, such as sex, age, and trauma type. Apply known prevalence-based modifiers to weigh the risk appropriately. Based on your findings, evaluate the likelihood that this patient will develop PTSD in the next month and assign a PTSD risk score from 0 to 100, where 0 represents negligible risk and 100 represents very high risk. **Note: Acute distress after experiencing a traumatic event is normal and does not necessarily indicate a higher PTSD risk.** Provide a justification for your score, referencing specific features and reasoning from empirical knowledge.\n\nOutput Format:\nPTSD risk score: \"[0-100]\"\nExplanation: \"one short sentence, no filler words\"\n\n**WARNING:** Any other output format is incorrect.",
     "system": "You are an AI assistant specializing in trauma-related mental health disorders. Carefully analyze the patient's trauma narrative. Your response must be strictly in the required output format with no extra text, comments, or explanations. Responses must be concise, factual, and only include information explicitly supported by the narrative."
   }
 ]

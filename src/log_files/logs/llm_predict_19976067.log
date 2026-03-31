@@ -1,0 +1,12 @@
+GPU Memory — Total: 81153 MB, Reserved: 0 MB, Allocated: 0 MB, Free: 0 MB
+[llama33_70B] 20 prompts, batch_size=16
+Saved → /gpfs/data/schultebrauckslab/Users/muellv01/results/PREVIA_layer1_prompts_text_whisper_llama33_70B_llm_test.csv
+GPU Memory — Total: 81153 MB, Reserved: 17324 MB, Allocated: 8 MB, Free: 17316 MB
+[mistral_large] 20 prompts, batch_size=16
+Saved → /gpfs/data/schultebrauckslab/Users/muellv01/results/PREVIA_layer1_prompts_text_whisper_mistral_large_llm_test.csv
+GPU Memory — Total: 81153 MB, Reserved: 17324 MB, Allocated: 8 MB, Free: 17316 MB
+[deepseek_70B] 20 prompts, batch_size=1
+Saved → /gpfs/data/schultebrauckslab/Users/muellv01/results/PREVIA_layer1_prompts_llama33_70B_mistral_large_text_whisper_summary_layer2_prompts_deepseek_70B_llm_test.csv
+GPU Memory — Total: 81153 MB, Reserved: 17324 MB, Allocated: 8 MB, Free: 17316 MB
+[mistral_large] 5 prompts, batch_size=16
+Saved → /gpfs/data/schultebrauckslab/Users/muellv01/results/PREVIA_text_whisper_llm_test_layer1_prompts_llama33_70B_mistral_large_layer2_prompts_deepseek_70B_layer3_prompts_clinical_mistral_large_demo-True_prev-True_mean_llm_test.csv

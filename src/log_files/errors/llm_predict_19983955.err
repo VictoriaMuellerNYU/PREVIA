@@ -1,0 +1,138 @@
+Loading checkpoint shards:   0%|          | 0/30 [00:00<?, ?it/s]Loading checkpoint shards:   3%|▎         | 1/30 [00:04<02:18,  4.77s/it]Loading checkpoint shards:   7%|▋         | 2/30 [00:09<02:11,  4.70s/it]Loading checkpoint shards:  10%|█         | 3/30 [00:14<02:08,  4.76s/it]Loading checkpoint shards:  13%|█▎        | 4/30 [00:18<02:02,  4.73s/it]Loading checkpoint shards:  17%|█▋        | 5/30 [00:24<02:02,  4.89s/it]Loading checkpoint shards:  20%|██        | 6/30 [00:28<01:56,  4.84s/it]Loading checkpoint shards:  23%|██▎       | 7/30 [00:33<01:50,  4.80s/it]Loading checkpoint shards:  27%|██▋       | 8/30 [00:38<01:46,  4.82s/it]Loading checkpoint shards:  30%|███       | 9/30 [00:43<01:40,  4.81s/it]Loading checkpoint shards:  33%|███▎      | 10/30 [00:48<01:36,  4.80s/it]Loading checkpoint shards:  37%|███▋      | 11/30 [00:52<01:30,  4.78s/it]Loading checkpoint shards:  40%|████      | 12/30 [00:57<01:25,  4.75s/it]Loading checkpoint shards:  43%|████▎     | 13/30 [01:02<01:20,  4.73s/it]Loading checkpoint shards:  47%|████▋     | 14/30 [01:06<01:14,  4.69s/it]Loading checkpoint shards:  50%|█████     | 15/30 [01:11<01:09,  4.66s/it]Loading checkpoint shards:  53%|█████▎    | 16/30 [01:15<01:04,  4.62s/it]Loading checkpoint shards:  57%|█████▋    | 17/30 [01:20<01:00,  4.63s/it]Loading checkpoint shards:  60%|██████    | 18/30 [01:25<00:55,  4.64s/it]Loading checkpoint shards:  63%|██████▎   | 19/30 [01:29<00:51,  4.66s/it]Loading checkpoint shards:  67%|██████▋   | 20/30 [01:34<00:46,  4.68s/it]Loading checkpoint shards:  70%|███████   | 21/30 [01:39<00:43,  4.82s/it]Loading checkpoint shards:  73%|███████▎  | 22/30 [01:44<00:38,  4.86s/it]Loading checkpoint shards:  77%|███████▋  | 23/30 [01:49<00:34,  4.98s/it]Loading checkpoint shards:  80%|████████  | 24/30 [01:55<00:30,  5.05s/it]Loading checkpoint shards:  83%|████████▎ | 25/30 [02:00<00:25,  5.11s/it]Loading checkpoint shards:  87%|████████▋ | 26/30 [02:05<00:20,  5.10s/it]Loading checkpoint shards:  90%|█████████ | 27/30 [02:10<00:15,  5.14s/it]Loading checkpoint shards:  93%|█████████▎| 28/30 [02:16<00:10,  5.24s/it]Loading checkpoint shards:  97%|█████████▋| 29/30 [02:21<00:05,  5.24s/it]Loading checkpoint shards: 100%|██████████| 30/30 [02:23<00:00,  4.17s/it]Loading checkpoint shards: 100%|██████████| 30/30 [02:23<00:00,  4.77s/it]
+WARNING:accelerate.utils.other:Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Batches:   0%|          | 0/37 [00:00<?, ?it/s]INFO:LLMModel:Input token length: 2445
+/gpfs/data/schultebrauckslab/Users/muellv01/.conda/envs/llm_predict/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/gpfs/data/schultebrauckslab/Users/muellv01/.conda/envs/llm_predict/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:636: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+Batches:   3%|▎         | 1/37 [01:01<36:56, 61.57s/it]INFO:LLMModel:Input token length: 969
+Batches:   5%|▌         | 2/37 [01:34<26:15, 45.00s/it]INFO:LLMModel:Input token length: 1302
+Batches:   8%|▊         | 3/37 [02:19<25:19, 44.69s/it]INFO:LLMModel:Input token length: 1087
+Batches:  11%|█         | 4/37 [02:53<22:21, 40.65s/it]INFO:LLMModel:Input token length: 951
+Batches:  14%|█▎        | 5/37 [03:25<19:55, 37.36s/it]INFO:LLMModel:Input token length: 1247
+Batches:  16%|█▌        | 6/37 [04:01<19:05, 36.95s/it]INFO:LLMModel:Input token length: 1444
+Batches:  19%|█▉        | 7/37 [04:41<19:00, 38.01s/it]INFO:LLMModel:Input token length: 1808
+Batches:  22%|██▏       | 8/37 [05:28<19:44, 40.86s/it]INFO:LLMModel:Input token length: 2774
+Batches:  24%|██▍       | 9/37 [06:34<22:41, 48.62s/it]INFO:LLMModel:Input token length: 2453
+Batches:  27%|██▋       | 10/37 [07:37<23:51, 53.03s/it]INFO:LLMModel:Input token length: 977
+Batches:  30%|██▉       | 11/37 [08:09<20:10, 46.55s/it]INFO:LLMModel:Input token length: 1310
+Batches:  32%|███▏      | 12/37 [08:51<18:53, 45.35s/it]INFO:LLMModel:Input token length: 1095
+Batches:  35%|███▌      | 13/37 [09:26<16:51, 42.14s/it]INFO:LLMModel:Input token length: 959
+Batches:  38%|███▊      | 14/37 [09:59<15:09, 39.54s/it]INFO:LLMModel:Input token length: 1255
+Batches:  41%|████      | 15/37 [10:36<14:10, 38.65s/it]INFO:LLMModel:Input token length: 1452
+Batches:  43%|████▎     | 16/37 [11:16<13:39, 39.04s/it]INFO:LLMModel:Input token length: 1816
+Batches:  46%|████▌     | 17/37 [12:01<13:36, 40.82s/it]INFO:LLMModel:Input token length: 2782
+Batches:  49%|████▊     | 18/37 [13:10<15:39, 49.46s/it]INFO:LLMModel:Input token length: 2455
+Batches:  51%|█████▏    | 19/37 [14:17<16:24, 54.67s/it]INFO:LLMModel:Input token length: 979
+Batches:  54%|█████▍    | 20/37 [14:54<14:00, 49.42s/it]INFO:LLMModel:Input token length: 1312
+Batches:  57%|█████▋    | 21/37 [15:43<13:05, 49.08s/it]INFO:LLMModel:Input token length: 1204
+Batches:  59%|█████▉    | 22/37 [16:17<11:08, 44.59s/it]INFO:LLMModel:Input token length: 961
+Batches:  62%|██████▏   | 23/37 [16:55<09:56, 42.57s/it]INFO:LLMModel:Input token length: 1257
+Batches:  65%|██████▍   | 24/37 [17:38<09:15, 42.73s/it]INFO:LLMModel:Input token length: 1119
+Batches:  68%|██████▊   | 25/37 [18:12<08:02, 40.22s/it]INFO:LLMModel:Input token length: 1818
+Batches:  70%|███████   | 26/37 [19:03<07:57, 43.42s/it]INFO:LLMModel:Input token length: 2784
+Batches:  73%|███████▎  | 27/37 [20:13<08:34, 51.42s/it]INFO:LLMModel:Input token length: 2455
+Batches:  76%|███████▌  | 28/37 [21:17<08:14, 55.00s/it]INFO:LLMModel:Input token length: 979
+Batches:  78%|███████▊  | 29/37 [21:54<06:38, 49.83s/it]INFO:LLMModel:Input token length: 1312
+Batches:  81%|████████  | 30/37 [22:37<05:33, 47.68s/it]INFO:LLMModel:Input token length: 1204
+Batches:  84%|████████▍ | 31/37 [23:16<04:31, 45.24s/it]INFO:LLMModel:Input token length: 906
+Batches:  86%|████████▋ | 32/37 [23:47<03:24, 40.84s/it]INFO:LLMModel:Input token length: 1257
+Batches:  89%|████████▉ | 33/37 [24:24<02:38, 39.55s/it]INFO:LLMModel:Input token length: 1119
+Batches:  92%|█████████▏| 34/37 [25:00<01:55, 38.46s/it]INFO:LLMModel:Input token length: 1818
+Batches:  95%|█████████▍| 35/37 [25:47<01:22, 41.27s/it]INFO:LLMModel:Input token length: 2784
+Batches:  97%|█████████▋| 36/37 [26:53<00:48, 48.56s/it]INFO:LLMModel:Input token length: 895
+Batches: 100%|██████████| 37/37 [27:10<00:00, 39.05s/it]Batches: 100%|██████████| 37/37 [27:10<00:00, 44.06s/it]
+Loading checkpoint shards:   0%|          | 0/51 [00:00<?, ?it/s]Loading checkpoint shards:   2%|▏         | 1/51 [00:04<03:25,  4.12s/it]Loading checkpoint shards:   4%|▍         | 2/51 [00:08<03:27,  4.24s/it]Loading checkpoint shards:   6%|▌         | 3/51 [00:12<03:20,  4.17s/it]Loading checkpoint shards:   8%|▊         | 4/51 [00:17<03:24,  4.35s/it]Loading checkpoint shards:  10%|▉         | 5/51 [00:21<03:20,  4.37s/it]Loading checkpoint shards:  12%|█▏        | 6/51 [00:26<03:23,  4.53s/it]Loading checkpoint shards:  14%|█▎        | 7/51 [00:30<03:15,  4.44s/it]Loading checkpoint shards:  16%|█▌        | 8/51 [00:35<03:14,  4.51s/it]Loading checkpoint shards:  18%|█▊        | 9/51 [00:40<03:11,  4.57s/it]Loading checkpoint shards:  20%|█▉        | 10/51 [00:44<03:08,  4.60s/it]Loading checkpoint shards:  22%|██▏       | 11/51 [00:48<02:58,  4.47s/it]Loading checkpoint shards:  24%|██▎       | 12/51 [00:53<02:54,  4.48s/it]Loading checkpoint shards:  25%|██▌       | 13/51 [00:58<02:52,  4.54s/it]Loading checkpoint shards:  27%|██▋       | 14/51 [01:02<02:47,  4.54s/it]Loading checkpoint shards:  29%|██▉       | 15/51 [01:06<02:35,  4.33s/it]Loading checkpoint shards:  31%|███▏      | 16/51 [01:10<02:28,  4.25s/it]Loading checkpoint shards:  33%|███▎      | 17/51 [01:15<02:30,  4.42s/it]Loading checkpoint shards:  35%|███▌      | 18/51 [01:20<02:30,  4.57s/it]Loading checkpoint shards:  37%|███▋      | 19/51 [01:24<02:25,  4.53s/it]Loading checkpoint shards:  39%|███▉      | 20/51 [01:28<02:17,  4.43s/it]Loading checkpoint shards:  41%|████      | 21/51 [01:33<02:19,  4.64s/it]Loading checkpoint shards:  43%|████▎     | 22/51 [01:36<01:55,  3.97s/it]Loading checkpoint shards:  45%|████▌     | 23/51 [01:40<01:54,  4.10s/it]Loading checkpoint shards:  47%|████▋     | 24/51 [01:45<01:54,  4.25s/it]Loading checkpoint shards:  49%|████▉     | 25/51 [01:46<01:28,  3.41s/it]Loading checkpoint shards:  51%|█████     | 26/51 [01:48<01:11,  2.86s/it]Loading checkpoint shards:  53%|█████▎    | 27/51 [01:52<01:19,  3.32s/it]Loading checkpoint shards:  55%|█████▍    | 28/51 [01:55<01:11,  3.10s/it]Loading checkpoint shards:  57%|█████▋    | 29/51 [02:00<01:18,  3.57s/it]Loading checkpoint shards:  59%|█████▉    | 30/51 [02:04<01:19,  3.80s/it]Loading checkpoint shards:  61%|██████    | 31/51 [02:08<01:15,  3.80s/it]Loading checkpoint shards:  63%|██████▎   | 32/51 [02:12<01:12,  3.82s/it]Loading checkpoint shards:  65%|██████▍   | 33/51 [02:16<01:09,  3.87s/it]Loading checkpoint shards:  67%|██████▋   | 34/51 [02:19<01:04,  3.79s/it]Loading checkpoint shards:  69%|██████▊   | 35/51 [02:23<01:02,  3.91s/it]Loading checkpoint shards:  71%|███████   | 36/51 [02:28<01:01,  4.11s/it]Loading checkpoint shards:  73%|███████▎  | 37/51 [02:32<00:59,  4.25s/it]Loading checkpoint shards:  75%|███████▍  | 38/51 [02:37<00:56,  4.37s/it]Loading checkpoint shards:  76%|███████▋  | 39/51 [02:42<00:52,  4.41s/it]Loading checkpoint shards:  78%|███████▊  | 40/51 [02:45<00:46,  4.21s/it]Loading checkpoint shards:  80%|████████  | 41/51 [02:49<00:40,  4.02s/it]Loading checkpoint shards:  82%|████████▏ | 42/51 [02:53<00:37,  4.15s/it]Loading checkpoint shards:  84%|████████▍ | 43/51 [02:57<00:31,  3.89s/it]Loading checkpoint shards:  86%|████████▋ | 44/51 [03:00<00:26,  3.71s/it]Loading checkpoint shards:  88%|████████▊ | 45/51 [03:03<00:21,  3.62s/it]Loading checkpoint shards:  90%|█████████ | 46/51 [03:08<00:19,  3.97s/it]Loading checkpoint shards:  92%|█████████▏| 47/51 [03:11<00:15,  3.76s/it]Loading checkpoint shards:  94%|█████████▍| 48/51 [03:16<00:12,  4.01s/it]Loading checkpoint shards:  96%|█████████▌| 49/51 [03:19<00:07,  3.77s/it]Loading checkpoint shards:  98%|█████████▊| 50/51 [03:24<00:03,  3.97s/it]Loading checkpoint shards: 100%|██████████| 51/51 [03:25<00:00,  3.06s/it]Loading checkpoint shards: 100%|██████████| 51/51 [03:25<00:00,  4.02s/it]
+WARNING:accelerate.utils.other:Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Batches:   0%|          | 0/37 [00:00<?, ?it/s]Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+INFO:LLMModel:Input token length: 2635
+Batches:   3%|▎         | 1/37 [02:35<1:33:11, 155.33s/it]INFO:LLMModel:Input token length: 1037
+Batches:   5%|▌         | 2/37 [03:53<1:04:14, 110.12s/it]INFO:LLMModel:Input token length: 1393
+Batches:   8%|▊         | 3/37 [05:05<52:32, 92.71s/it]   INFO:LLMModel:Input token length: 1156
+Batches:  11%|█         | 4/37 [06:14<45:46, 83.24s/it]INFO:LLMModel:Input token length: 1020
+Batches:  14%|█▎        | 5/37 [07:17<40:34, 76.07s/it]INFO:LLMModel:Input token length: 1353
+Batches:  16%|█▌        | 6/37 [08:26<37:57, 73.47s/it]INFO:LLMModel:Input token length: 1516
+Batches:  19%|█▉        | 7/37 [10:17<42:51, 85.72s/it]INFO:LLMModel:Input token length: 1927
+Batches:  22%|██▏       | 8/37 [12:01<44:16, 91.59s/it]INFO:LLMModel:Input token length: 2945
+Batches:  24%|██▍       | 9/37 [14:07<47:49, 102.48s/it]INFO:LLMModel:Input token length: 2643
+Batches:  27%|██▋       | 10/37 [16:03<47:56, 106.54s/it]INFO:LLMModel:Input token length: 1045
+Batches:  30%|██▉       | 11/37 [17:09<40:46, 94.08s/it] INFO:LLMModel:Input token length: 1401
+Batches:  32%|███▏      | 12/37 [18:21<36:26, 87.47s/it]INFO:LLMModel:Input token length: 1164
+Batches:  35%|███▌      | 13/37 [19:30<32:45, 81.89s/it]INFO:LLMModel:Input token length: 1028
+Batches:  38%|███▊      | 14/37 [20:49<30:59, 80.85s/it]INFO:LLMModel:Input token length: 1361
+Batches:  41%|████      | 15/37 [22:00<28:34, 77.95s/it]INFO:LLMModel:Input token length: 1524
+Batches:  43%|████▎     | 16/37 [23:26<28:06, 80.30s/it]INFO:LLMModel:Input token length: 1935
+Batches:  46%|████▌     | 17/37 [25:54<33:33, 100.69s/it]INFO:LLMModel:Input token length: 2953
+Batches:  49%|████▊     | 18/37 [27:56<33:54, 107.07s/it]INFO:LLMModel:Input token length: 2643
+Batches:  51%|█████▏    | 19/37 [29:52<32:57, 109.88s/it]INFO:LLMModel:Input token length: 1045
+Batches:  54%|█████▍    | 20/37 [30:59<27:29, 97.02s/it] INFO:LLMModel:Input token length: 1401
+Batches:  57%|█████▋    | 21/37 [32:13<24:02, 90.13s/it]INFO:LLMModel:Input token length: 1271
+Batches:  59%|█████▉    | 22/37 [33:31<21:37, 86.48s/it]INFO:LLMModel:Input token length: 1028
+Batches:  62%|██████▏   | 23/37 [34:44<19:14, 82.45s/it]INFO:LLMModel:Input token length: 1361
+Batches:  65%|██████▍   | 24/37 [36:00<17:24, 80.31s/it]INFO:LLMModel:Input token length: 1184
+Batches:  68%|██████▊   | 25/37 [37:41<17:18, 86.55s/it]INFO:LLMModel:Input token length: 1935
+Batches:  70%|███████   | 26/37 [39:15<16:17, 88.86s/it]INFO:LLMModel:Input token length: 2953
+Batches:  73%|███████▎  | 27/37 [41:44<17:50, 107.03s/it]INFO:LLMModel:Input token length: 2648
+Batches:  76%|███████▌  | 28/37 [44:08<17:41, 117.99s/it]INFO:LLMModel:Input token length: 1050
+Batches:  78%|███████▊  | 29/37 [45:16<13:43, 102.92s/it]INFO:LLMModel:Input token length: 1406
+Batches:  81%|████████  | 30/37 [46:34<11:08, 95.52s/it] INFO:LLMModel:Input token length: 1276
+Batches:  84%|████████▍ | 31/37 [47:55<09:07, 91.29s/it]INFO:LLMModel:Input token length: 979
+Batches:  86%|████████▋ | 32/37 [48:57<06:52, 82.46s/it]INFO:LLMModel:Input token length: 1366
+Batches:  89%|████████▉ | 33/37 [50:21<05:31, 82.84s/it]INFO:LLMModel:Input token length: 1189
+Batches:  92%|█████████▏| 34/37 [51:39<04:04, 81.50s/it]INFO:LLMModel:Input token length: 1940
+Batches:  95%|█████████▍| 35/37 [53:11<02:49, 84.57s/it]INFO:LLMModel:Input token length: 2958
+Batches:  97%|█████████▋| 36/37 [55:39<01:43, 103.53s/it]INFO:LLMModel:Input token length: 956
+Batches: 100%|██████████| 37/37 [56:11<00:00, 82.24s/it] Batches: 100%|██████████| 37/37 [56:11<00:00, 91.13s/it]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   6%|▌         | 1/17 [00:10<02:45, 10.34s/it]Loading checkpoint shards:  12%|█▏        | 2/17 [00:21<02:38, 10.53s/it]Loading checkpoint shards:  18%|█▊        | 3/17 [00:22<01:31,  6.53s/it]Loading checkpoint shards:  24%|██▎       | 4/17 [00:33<01:44,  8.02s/it]Loading checkpoint shards:  29%|██▉       | 5/17 [00:43<01:46,  8.89s/it]Loading checkpoint shards:  35%|███▌      | 6/17 [00:52<01:39,  9.08s/it]Loading checkpoint shards:  41%|████      | 7/17 [01:02<01:32,  9.22s/it]Loading checkpoint shards:  47%|████▋     | 8/17 [01:12<01:24,  9.36s/it]Loading checkpoint shards:  53%|█████▎    | 9/17 [01:21<01:14,  9.36s/it]Loading checkpoint shards:  59%|█████▉    | 10/17 [01:31<01:06,  9.53s/it]Loading checkpoint shards:  65%|██████▍   | 11/17 [01:40<00:56,  9.46s/it]Loading checkpoint shards:  71%|███████   | 12/17 [01:50<00:47,  9.46s/it]Loading checkpoint shards:  76%|███████▋  | 13/17 [01:59<00:37,  9.40s/it]Loading checkpoint shards:  82%|████████▏ | 14/17 [02:08<00:27,  9.32s/it]Loading checkpoint shards:  88%|████████▊ | 15/17 [02:17<00:18,  9.19s/it]Loading checkpoint shards:  94%|█████████▍| 16/17 [02:26<00:09,  9.19s/it]Loading checkpoint shards: 100%|██████████| 17/17 [02:37<00:00,  9.69s/it]Loading checkpoint shards: 100%|██████████| 17/17 [02:37<00:00,  9.27s/it]
+WARNING:accelerate.utils.other:Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Batches:   0%|          | 0/580 [00:00<?, ?it/s]INFO:LLMModel:Input token length: 258
+/gpfs/data/schultebrauckslab/Users/muellv01/.conda/envs/llm_predict/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/gpfs/data/schultebrauckslab/Users/muellv01/.conda/envs/llm_predict/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:636: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.95` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+Batches:   0%|          | 1/580 [00:29<4:42:28, 29.27s/it]INFO:LLMModel:Input token length: 252
+Batches:   0%|          | 2/580 [01:05<5:20:01, 33.22s/it]INFO:LLMModel:Input token length: 268
+Batches:   1%|          | 3/580 [01:38<5:21:25, 33.42s/it]INFO:LLMModel:Input token length: 260
+Batches:   1%|          | 4/580 [02:23<6:01:44, 37.68s/it]INFO:LLMModel:Input token length: 243
+Batches:   1%|          | 5/580 [02:51<5:29:09, 34.35s/it]INFO:LLMModel:Input token length: 259
+Batches:   1%|          | 6/580 [03:56<7:09:11, 44.86s/it]INFO:LLMModel:Input token length: 260
+Batches:   1%|          | 7/580 [04:40<7:04:27, 44.45s/it]INFO:LLMModel:Input token length: 240
+Batches:   1%|▏         | 8/580 [05:22<6:55:02, 43.54s/it]INFO:LLMModel:Input token length: 251
+Batches:   2%|▏         | 9/580 [05:50<6:10:31, 38.93s/it]INFO:LLMModel:Input token length: 268
+Batches:   2%|▏         | 10/580 [06:41<6:43:40, 42.49s/it]INFO:LLMModel:Input token length: 303
+Batches:   2%|▏         | 11/580 [07:04<5:47:21, 36.63s/it]INFO:LLMModel:Input token length: 250
+Batches:   2%|▏         | 12/580 [07:44<5:56:14, 37.63s/it]INFO:LLMModel:Input token length: 252
+Batches:   2%|▏         | 13/580 [08:19<5:48:00, 36.83s/it]INFO:LLMModel:Input token length: 250
+Batches:   2%|▏         | 14/580 [09:06<6:15:24, 39.80s/it]INFO:LLMModel:Input token length: 248
+Batches:   3%|▎         | 15/580 [09:44<6:10:29, 39.34s/it]INFO:LLMModel:Input token length: 268
+Batches:   3%|▎         | 16/580 [10:14<5:42:08, 36.40s/it]INFO:LLMModel:Input token length: 250
+Batches:   3%|▎         | 17/580 [11:03<6:17:22, 40.22s/it]INFO:LLMModel:Input token length: 250
+Batches:   3%|▎         | 18/580 [11:38<6:03:49, 38.84s/it]INFO:LLMModel:Input token length: 269
+Batches:   3%|▎         | 19/580 [12:10<5:42:28, 36.63s/it]INFO:LLMModel:Input token length: 245
+Batches:   3%|▎         | 20/580 [12:42<5:30:59, 35.46s/it]INFO:LLMModel:Input token length: 276
+Batches:   4%|▎         | 21/580 [13:11<5:11:28, 33.43s/it]INFO:LLMModel:Input token length: 248
+Batches:   4%|▍         | 22/580 [13:37<4:50:51, 31.27s/it]INFO:LLMModel:Input token length: 250
+Batches:   4%|▍         | 23/580 [14:17<5:14:47, 33.91s/it]INFO:LLMModel:Input token length: 272
+Batches:   4%|▍         | 24/580 [14:51<5:12:11, 33.69s/it]INFO:LLMModel:Input token length: 252
+Batches:   4%|▍         | 25/580 [15:25<5:14:18, 33.98s/it]INFO:LLMModel:Input token length: 245
+Batches:   4%|▍         | 26/580 [16:06<5:32:56, 36.06s/it]INFO:LLMModel:Input token length: 249
+Batches:   5%|▍         | 27/580 [16:38<5:19:11, 34.63s/it]INFO:LLMModel:Input token length: 257
+Batches:   5%|▍         | 28/580 [17:28<6:03:20, 39.49s/it]INFO:LLMModel:Input token length: 261
+Batches:   5%|▌         | 29/580 [17:57<5:33:17, 36.29s/it]INFO:LLMModel:Input token length: 251
+Batches:   5%|▌         | 30/580 [18:34<5:33:56, 36.43s/it]INFO:LLMModel:Input token length: 245
+Batches:   5%|▌         | 31/580 [19:03<5:11:45, 34.07s/it]INFO:LLMModel:Input token length: 287
+Batches:   6%|▌         | 32/580 [19:31<4:54:53, 32.29s/it]INFO:LLMModel:Input token length: 260
+Batches:   6%|▌         | 33/580 [20:06<5:03:52, 33.33s/it]INFO:LLMModel:Input token length: 270
+Batches:   6%|▌         | 34/580 [20:49<5:27:37, 36.00s/it]INFO:LLMModel:Input token length: 233
+Batches:   6%|▌         | 35/580 [21:19<5:11:35, 34.30s/it]INFO:LLMModel:Input token length: 252
+Batches:   6%|▌         | 36/580 [22:03<5:38:28, 37.33s/it]INFO:LLMModel:Input token length: 252
+Batches:   6%|▋         | 37/580 [22:57<6:21:58, 42.21s/it]INFO:LLMModel:Input token length: 260
+Batches:   7%|▋         | 38/580 [23:30<5:57:06, 39.53s/it]INFO:LLMModel:Input token length: 244
+Batches:   7%|▋         | 39/580 [24:27<6:44:12, 44.83s/it]INFO:LLMModel:Input token length: 261
+Batches:   7%|▋         | 40/580 [25:13<6:45:35, 45.07s/it]INFO:LLMModel:Input token length: 250
+Batches:   7%|▋         | 41/580 [26:04<6:59:33, 46.70s/it]INFO:LLMModel:Input token length: 254
+Batches:   7%|▋         | 42/580 [26:36<6:19:55, 42.37s/it]INFO:LLMModel:Input token length: 247
+Batches:   7%|▋         | 43/580 [27:41<7:20:28, 49.22s/it]INFO:LLMModel:Input token length: 245
+Batches:   8%|▊         | 44/580 [28:13<6:33:31, 44.05s/it]INFO:LLMModel:Input token length: 260
+Batches:   8%|▊         | 45/580 [28:42<5:53:03, 39.60s/it]INFO:LLMModel:Input token length: 278
+Batches:   8%|▊         | 46/580 [29:29<6:12:33, 41.86s/it]INFO:LLMModel:Input token length: 263

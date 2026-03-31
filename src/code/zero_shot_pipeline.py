@@ -151,7 +151,9 @@ def run_zero_shot(cfg: ZeroShotConfig) -> pd.DataFrame:
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Zero-shot PTSD risk assessment")
-    p.add_argument("--config-dir", type=str, default="..", help="Directory with config.json and tokens.json")
+    p.add_argument("--config-dir", type=str, 
+                default=str(Path(__file__).parent.parent),
+                help="Directory with config.json and tokens.json")
     p.add_argument("--outcome", choices=["clinical", "subclinical"], default="clinical")
     p.add_argument("--llm", type=str, default="mistral_large", help="e.g. llama33_70B, mistral_large")
     p.add_argument("--file-end-name", default="llm_CAPS_PCL1m_n145_allAvailData", help="Suffix identifying the input CSV")
