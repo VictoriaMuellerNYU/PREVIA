@@ -175,3 +175,71 @@ WARNING:accelerate.utils.other:Detected kernel version 4.18.0, which is below th
 Batches:  10%|█         | 59/580 [39:57<6:11:12, 42.75s/it]INFO:LLMModel:Input token length: 257
 Batches:  10%|█         | 60/580 [40:34<5:54:57, 40.96s/it]INFO:LLMModel:Input token length: 274
 Batches:  11%|█         | 61/580 [41:09<5:39:28, 39.25s/it]INFO:LLMModel:Input token length: 260
+Batches:  11%|█         | 62/580 [41:47<5:35:13, 38.83s/it]INFO:LLMModel:Input token length: 261
+Batches:  11%|█         | 63/580 [42:24<5:30:02, 38.30s/it]INFO:LLMModel:Input token length: 249
+Batches:  11%|█         | 64/580 [43:23<6:22:43, 44.50s/it]INFO:LLMModel:Input token length: 264
+Batches:  11%|█         | 65/580 [44:01<6:04:25, 42.46s/it]INFO:LLMModel:Input token length: 265
+Batches:  11%|█▏        | 66/580 [44:47<6:13:09, 43.56s/it]INFO:LLMModel:Input token length: 253
+Batches:  12%|█▏        | 67/580 [45:38<6:31:40, 45.81s/it]INFO:LLMModel:Input token length: 259
+Batches:  12%|█▏        | 68/580 [46:27<6:40:31, 46.94s/it]INFO:LLMModel:Input token length: 266
+Batches:  12%|█▏        | 69/580 [47:25<7:08:24, 50.30s/it]INFO:LLMModel:Input token length: 259
+Batches:  12%|█▏        | 70/580 [48:12<6:58:47, 49.27s/it]INFO:LLMModel:Input token length: 241
+Batches:  12%|█▏        | 71/580 [49:01<6:56:11, 49.06s/it]INFO:LLMModel:Input token length: 249
+Batches:  12%|█▏        | 72/580 [49:32<6:08:28, 43.52s/it]INFO:LLMModel:Input token length: 236
+Batches:  13%|█▎        | 73/580 [50:03<5:36:50, 39.86s/it]INFO:LLMModel:Input token length: 257
+Batches:  13%|█▎        | 74/580 [50:33<5:10:59, 36.88s/it]INFO:LLMModel:Input token length: 247
+Batches:  13%|█▎        | 75/580 [51:15<5:23:21, 38.42s/it]INFO:LLMModel:Input token length: 241
+Batches:  13%|█▎        | 76/580 [51:42<4:54:48, 35.10s/it]INFO:LLMModel:Input token length: 267
+Batches:  13%|█▎        | 77/580 [52:09<4:34:37, 32.76s/it]INFO:LLMModel:Input token length: 255
+Batches:  13%|█▎        | 78/580 [52:48<4:49:07, 34.56s/it]INFO:LLMModel:Input token length: 261
+Batches:  14%|█▎        | 79/580 [53:23<4:48:23, 34.54s/it]INFO:LLMModel:Input token length: 248
+Batches:  14%|█▍        | 80/580 [54:29<6:06:15, 43.95s/it]INFO:LLMModel:Input token length: 260
+Batches:  14%|█▍        | 81/580 [55:06<5:50:15, 42.11s/it]INFO:LLMModel:Input token length: 258
+Batches:  14%|█▍        | 82/580 [55:50<5:52:34, 42.48s/it]INFO:LLMModel:Input token length: 253
+Batches:  14%|█▍        | 83/580 [56:51<6:37:34, 48.00s/it]INFO:LLMModel:Input token length: 252
+Batches:  14%|█▍        | 84/580 [57:24<6:01:09, 43.69s/it]INFO:LLMModel:Input token length: 247
+Batches:  15%|█▍        | 85/580 [58:10<6:05:31, 44.31s/it]INFO:LLMModel:Input token length: 254
+Batches:  15%|█▍        | 86/580 [58:57<6:11:50, 45.16s/it]INFO:LLMModel:Input token length: 266
+Batches:  15%|█▌        | 87/580 [59:32<5:44:33, 41.93s/it]INFO:LLMModel:Input token length: 254
+Batches:  15%|█▌        | 88/580 [1:00:08<5:31:13, 40.39s/it]INFO:LLMModel:Input token length: 264
+Batches:  15%|█▌        | 89/580 [1:00:56<5:47:21, 42.45s/it]INFO:LLMModel:Input token length: 249
+Batches:  16%|█▌        | 90/580 [1:01:47<6:08:00, 45.06s/it]INFO:LLMModel:Input token length: 246
+Batches:  16%|█▌        | 91/580 [1:02:15<5:25:32, 39.94s/it]INFO:LLMModel:Input token length: 266
+Batches:  16%|█▌        | 92/580 [1:02:46<5:03:11, 37.28s/it]INFO:LLMModel:Input token length: 257
+Batches:  16%|█▌        | 93/580 [1:03:14<4:41:23, 34.67s/it]INFO:LLMModel:Input token length: 253
+Batches:  16%|█▌        | 94/580 [1:03:55<4:55:03, 36.43s/it]INFO:LLMModel:Input token length: 249
+Batches:  16%|█▋        | 95/580 [1:04:47<5:32:50, 41.18s/it]INFO:LLMModel:Input token length: 250
+Batches:  17%|█▋        | 96/580 [1:05:22<5:16:16, 39.21s/it]INFO:LLMModel:Input token length: 246
+Batches:  17%|█▋        | 97/580 [1:05:54<4:58:18, 37.06s/it]INFO:LLMModel:Input token length: 247
+Batches:  17%|█▋        | 98/580 [1:06:30<4:56:11, 36.87s/it]INFO:LLMModel:Input token length: 256
+Batches:  17%|█▋        | 99/580 [1:07:07<4:55:42, 36.89s/it]INFO:LLMModel:Input token length: 245
+
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s][A
+Loading checkpoint shards:   6%|▌         | 1/17 [00:09<02:28,  9.27s/it][A
+Loading checkpoint shards:  12%|█▏        | 2/17 [00:18<02:22,  9.52s/it][A
+Loading checkpoint shards:  18%|█▊        | 3/17 [00:20<01:22,  5.92s/it][A
+Loading checkpoint shards:  24%|██▎       | 4/17 [00:30<01:35,  7.37s/it][A
+Loading checkpoint shards:  29%|██▉       | 5/17 [00:39<01:36,  8.07s/it][A
+Loading checkpoint shards:  35%|███▌      | 6/17 [00:49<01:34,  8.57s/it][A
+Loading checkpoint shards:  41%|████      | 7/17 [00:58<01:28,  8.87s/it][A
+Loading checkpoint shards:  47%|████▋     | 8/17 [01:08<01:22,  9.14s/it][A
+Loading checkpoint shards:  53%|█████▎    | 9/17 [01:17<01:13,  9.19s/it][A
+Loading checkpoint shards:  59%|█████▉    | 10/17 [01:26<01:04,  9.21s/it][A
+Loading checkpoint shards:  65%|██████▍   | 11/17 [01:36<00:55,  9.28s/it][A
+Loading checkpoint shards:  71%|███████   | 12/17 [01:45<00:45,  9.14s/it][A
+Loading checkpoint shards:  76%|███████▋  | 13/17 [01:53<00:36,  9.04s/it][A
+Loading checkpoint shards:  82%|████████▏ | 14/17 [02:02<00:27,  9.02s/it][A
+Loading checkpoint shards:  88%|████████▊ | 15/17 [02:11<00:17,  8.90s/it][A
+Loading checkpoint shards:  94%|█████████▍| 16/17 [02:21<00:09,  9.12s/it][A
+Loading checkpoint shards: 100%|██████████| 17/17 [02:31<00:00,  9.61s/it][ALoading checkpoint shards: 100%|██████████| 17/17 [02:31<00:00,  8.93s/it]
+WARNING:accelerate.utils.other:Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Batches:  17%|█▋        | 100/580 [1:10:20<11:10:12, 83.78s/it]INFO:LLMModel:Input token length: 254
+/gpfs/data/schultebrauckslab/Users/muellv01/.conda/envs/llm_predict/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/gpfs/data/schultebrauckslab/Users/muellv01/.conda/envs/llm_predict/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:636: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.95` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+Batches:  17%|█▋        | 101/580 [1:10:53<9:05:56, 68.38s/it] INFO:LLMModel:Input token length: 252
+Batches:  18%|█▊        | 102/580 [1:11:40<8:13:14, 61.91s/it]INFO:LLMModel:Input token length: 253
+Batches:  18%|█▊        | 103/580 [1:12:29<7:43:21, 58.28s/it]INFO:LLMModel:Input token length: 255
+Batches:  18%|█▊        | 104/580 [1:12:59<6:35:02, 49.79s/it]INFO:LLMModel:Input token length: 267
+Batches:  18%|█▊        | 105/580 [1:13:38<6:07:06, 46.37s/it]INFO:LLMModel:Input token length: 262

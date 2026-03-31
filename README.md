@@ -9,40 +9,40 @@ PREVIA processes transcribed patient narratives through a three-layer architectu
 ## Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────────────┐
-│                        PREVIA Pipeline                              │
-│                                                                     │
-│  ┌───────────────────── Layer 1 ──────────────────────┐             │
+┌──────────────────────────────────────────────────────────────────────┐
+│                        PREVIA Pipeline                               │
+│                                                                      │
+│  ┌───────────────────── Layer 1 ───────────────────────┐             │
 │  │                                                     │             │
-│  │   Transcript ──┬──► LLM A (e.g. Llama 3.3 70B) ──┐ │             │
-│  │                │                                   ├─► Agent      │
+│  │   Transcript ──┬──► LLM A (e.g. Llama 3.3 70B) ───┐ │             │
+│  │                │                                  ├─►  Agent      │
 │  │                └──► LLM B (e.g. Mistral Large) ───┘ │  outputs    │
 │  │                                                     │  per risk   │
 │  │   Agents: ED-PTSD-symptoms, peri-trauma-symptoms,   │  domain     │
-│  │           risk-factors, protective-factors           │             │
+│  │           risk-factors, protective-factors          │             │
 │  └─────────────────────────┬───────────────────────────┘             │
 │                            │                                         │
-│  ┌──────────── Layer 2 ────▼──────────────┐                         │
+│  ┌──────────── Layer 2 ────▼───────────────┐                         │
 │  │                                         │                         │
-│  │   Summarizer LLM (e.g. DeepSeek 70B)   │                         │
-│  │   Reconciles LLM A + LLM B outputs     │                         │
+│  │   Summarizer LLM (e.g. DeepSeek 70B)    │                         │
+│  │   Reconciles LLM A + LLM B outputs      │                         │
 │  │   Risk scores replaced with true means  │                         │
 │  └─────────────────────┬───────────────────┘                         │
 │                        │                                             │
-│  ┌──────── Layer 3 ────▼──────────────────┐                         │
+│  ┌──────── Layer 3 ────▼───────────────────┐                         │
 │  │                                         │                         │
 │  │   Final assessor LLM                    │                         │
 │  │   + Demographics (age, sex, trauma)     │                         │
 │  │   + PTSD prevalence data                │                         │
 │  │   ──► Clinical / subclinical decision   │                         │
 │  └─────────────────────────────────────────┘                         │
-└─────────────────────────────────────────────────────────────────────┘
+└──────────────────────────────────────────────────────────────────────┘
 
-┌─────────────────────────────────────────────────────────────────────┐
+┌──────────────────────────────────────────────────────────────────────┐
 │                     Zero-Shot Baseline                               │
-│                                                                     │
-│   Transcript + Demographics + Prevalence ──► Single LLM ──► Output  │
-└─────────────────────────────────────────────────────────────────────┘
+│                                                                      │
+│   Transcript + Demographics + Prevalence ──► Single LLM ──► Output   │
+└──────────────────────────────────────────────────────────────────────┘
 ```
 
 **Layer 1** runs each transcript through two LLMs independently. Each LLM evaluates four clinical domains and assigns a risk score per domain.
@@ -102,6 +102,8 @@ pip install -r requirements.txt
 ```
 
 The `requirements.txt` pins all core dependencies (PyTorch 2.3 with CUDA 11.8, Transformers 4.51, Accelerate 1.6, bitsandbytes 0.45). PyTorch packages are pulled from the CUDA 11.8 wheel index automatically via `--extra-index-url`.
+
+Typical install time is approximately 5-10 minutes on a standard internet connection.
 
 > **Note**: `bitsandbytes` requires a Linux environment with CUDA. See the [bitsandbytes installation guide](https://github.com/TimDettmers/bitsandbytes) for platform-specific instructions.
 
@@ -209,6 +211,50 @@ python zero_shot_pipeline.py --config-dir ./configs --outcome subclinical --llm 
 | `--outcome` | `clinical` | `clinical` or `subclinical` |
 | `--llm` | `mistral_large` | Model key from `config.json` |
 | `--file-end-name` | `llm_CAPS_PCL1m_n145_allAvailData` | Suffix of the input CSV |
+
+---
+
+## Demo
+
+A synthetic demo dataset with 5 fabricated trauma narratives is included in `demo/` so that reviewers and users can verify the pipeline runs end-to-end. These narratives are entirely fictional and do not correspond to any real participants.
+
+### Demo structure
+
+```
+demo/
+├── config.json          # Demo config (update model paths for your environment)
+├── data/
+│   └── demo_data.csv    # 5 synthetic narratives with demographics
+└── results/             # Pipeline outputs will be written here
+```
+
+### Running the demo
+
+1. Update the model paths in `demo/config.json` to point to your local HuggingFace model weights.
+
+2. Run the PREVIA pipeline:
+```bash
+python src/code/previa_pipeline.py --config-dir ./demo --file-end-name demo_data --outcome clinical
+```
+
+3. Or run the zero-shot baseline:
+```bash
+python src/code/zero_shot_pipeline.py --config-dir ./demo --file-end-name demo_data --outcome clinical --llm mistral_large
+```
+
+### Expected output
+
+The pipeline will produce CSV files in `demo/results/` containing structured risk assessments for each of the 5 synthetic participants. Expected runtime on a single NVIDIA A100 80 GB GPU is approximately 15-30 minutes for the full three-layer pipeline, or 5-10 minutes for the zero-shot baseline.
+
+---
+
+## Reproducing manuscript results
+
+The results reported in the manuscript were generated using the full clinical cohort (N=145) recruited from emergency departments in the New York City area. This dataset cannot be shared publicly due to participant privacy protections under IRB protocol `[IRB protocol number]`.
+
+The `demo/` dataset is provided to verify that the pipeline installs and runs correctly. It is not intended to reproduce the quantitative results reported in the paper.
+
+Requests for access to the clinical dataset can be directed to `[corresponding author email]`.
 
 ---
 
