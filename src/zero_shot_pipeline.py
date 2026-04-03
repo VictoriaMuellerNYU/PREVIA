@@ -6,8 +6,8 @@ Demographics and prevalence information are injected directly into the prompt.
 No multi-layer ensemble — this is the baseline comparator for PREVIA.
 
 Usage:
-  python zero_shot_pipeline.py --config-dir ./configs --outcome clinical --llm mistral_large
-  python zero_shot_pipeline.py --config-dir ./configs --outcome subclinical --llm llama33_70B
+  python zero_shot_pipeline.py --config-dir ./demo --outcome clinical --llm mistral_large
+  python zero_shot_pipeline.py --config-dir ./demo --outcome subclinical --llm llama33_70B
 """
 
 from __future__ import annotations
@@ -101,7 +101,7 @@ def _build_prompts(
     prompt_id: str,
     transcript_col: str = "text_whisper",
 ) -> list[dict]:
-    prompts_path = Path(__file__).parent / "configs" / "zero_shot_prompt.json"
+    prompts_path = Path(__file__).parent / "prompts" / "zero_shot_prompt.json"
     builder = PromptBuilder(
         df,
         prompts_path=prompts_path,

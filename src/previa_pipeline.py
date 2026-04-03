@@ -9,13 +9,12 @@ Architecture:
   Layer 3: Final clinical/subclinical assessment with demographics
 
 Usage:
-  python previa_pipeline.py --config-dir ./configs --outcome clinical
-  python previa_pipeline.py --config-dir ./configs --outcome clinical --skip-layer1
-  python previa_pipeline.py --config-dir ./configs --outcome clinical --skip-layer1 --skip-layer2
+  python previa_pipeline.py --config-dir ./demo --outcome clinical
+  python previa_pipeline.py --config-dir ./demo --outcome clinical --skip-layer1
+  python previa_pipeline.py --config-dir ./demo --outcome clinical --skip-layer1 --skip-layer2
 """
 
 from __future__ import annotations
-
 import argparse
 import re
 from dataclasses import dataclass
@@ -110,13 +109,12 @@ class PreviaConfig:
 # ---------------------------------------------------------------------------
 
 def _extract_risk_score(text: str) -> Optional[int]:
-    pattern = r'(?:\*\*)?PTSD risk score:(?:\*\*)?\s*["\\[]?(\d+)[\\]"]?'
+    pattern = r'(?:\*\*)?PTSD risk score:(?:\*\*)?\s*["\[]?(\d+)[\]"]?'
     match = re.search(pattern, text)
     return int(match.group(1)) if match else None
 
-
 def _replace_risk_score(text: str, new_score: float) -> str:
-    pattern = r'((?:\*\*)?PTSD risk score:(?:\*\*)?\s*)["\\[]?\d+[\\]"]?'
+    pattern = r'((?:\*\*)?PTSD risk score:(?:\*\*)?\s*)["\[]?\d+[\]"]?'
     return re.sub(pattern, rf'\1"{new_score}"', text)
 
 
@@ -178,7 +176,7 @@ def _build_prompts(
     layer3_assessment: bool = False,
     layer1_llms: Optional[tuple[str, ...]] = None,
 ) -> list:
-    prompts_path = Path(__file__).parent / "configs" / "previa_prompts.json"
+    prompts_path = Path(__file__).parent / "prompts" / "previa_prompts.json"
     builder = PromptBuilder(
         df,
         prompts_path=prompts_path,
@@ -295,6 +293,9 @@ def load_layer2(cfg: PreviaConfig) -> pd.DataFrame:
 
 
 def run_layer3(cfg: PreviaConfig, layer2_output: pd.DataFrame, transcripts: pd.DataFrame) -> pd.DataFrame:
+    layer1_output = layer2_output.drop("summarizer", level="model")
+    layer2_output = compute_mean_risk_scores(layer1_output, layer2_output.xs("summarizer", level="model", drop_level=False).reset_index(), model_names=cfg.layer1_llms)
+
     layer2_output_slice = layer2_output.xs("summarizer", level="model")
     summarizer_slice = layer2_output_slice.join(
         transcripts[list(cfg.demo_columns)], on="record_id", how="right"

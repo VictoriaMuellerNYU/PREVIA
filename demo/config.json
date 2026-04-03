@@ -1,8 +1,0 @@
-{
-    "hpc": {
-        "base_path": "/path/to/PREVIA/demo",
-        "llama33_70B_path": "/path/to/models/Llama-3.3-70B-Instruct",
-        "mistral_large_path": "/path/to/models/Mistral-Large-Instruct-2411",
-        "deepseek_70B_path": "/path/to/models/DeepSeek-R1-Distill-Llama-70B"
-    }
-}

@@ -25,7 +25,7 @@
   ],
 
 
-    "layer2_prompts": [
+  "layer2_prompts": [
     {
       "type": "summarizer",
       "user": "Here are PTSD risk assessments of a patient in the Emergency Department (ED) shortly after experiencing a traumatic event related to {{agent_type}} from two different LLM agents: A and B. Each identifies {{agent_type}} and assigns a score from 0 to 100. Your tasks are:\n1. Compare the reasoning and {{agent_type}} identified by each model.\n2. Determine if either model omits key information or misjudges risk.\n3. Output a final PTSD risk score, justified by specific factors from both models.\n\nOutput Format:\nPTSD risk score: \"[0-100]\"\nExplanation: \"single sentence with no filler or speculation, reference both agents A and B where relevant\"\n\n**WARNING:** Any other output format is incorrect.",

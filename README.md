@@ -72,15 +72,14 @@ PREVIA uses open-weight LLMs from Hugging Face, run locally with 4-bit quantisat
 ## Project structure
 
 ```
+src/
 ├── previa_pipeline.py      # Three-layer PREVIA pipeline (CLI entrypoint)
 ├── zero_shot_pipeline.py   # Zero-shot baseline pipeline (CLI entrypoint)
 ├── pipeline_utils.py       # Shared helpers (GPU, I/O, config, output formatting)
 ├── LLMModel.py             # HuggingFace causal LM wrapper (4-bit quantised)
 ├── PromptBuilder.py        # Prompt construction for all layers + zero-shot
 ├── requirements.txt        # Pinned Python dependencies
-└── configs/
-    ├── config.json          # Model paths and base data path (per deployment)
-    ├── tokens.json          # HuggingFace API token
+└── prompts/
     ├── previa_prompts.json  # System/user prompts for Layers 1-3
     ├── zero_shot_prompt.json# System/user prompts for zero-shot
     └── PTSD_prevalence.txt  # Base-rate prevalence text injected into prompts
@@ -130,9 +129,13 @@ The `base_path` directory is expected to contain:
 
 ```
 base_path/
+├── configs/ 
+│   └── config.json                # Config file with paths
+│   └── token.json                 # Huggingface token
 ├── data/
 │   └── <file_end_name>.csv    # Transcripts with record_id index
 └── results/                   # Pipeline outputs saved here
+
 ```
 
 ### `configs/tokens.json`
@@ -223,6 +226,7 @@ A synthetic demo dataset with 5 fabricated trauma narratives is included in `dem
 ```
 demo/
 ├── config.json          # Demo config (update model paths for your environment)
+├── token.json           # Huggingface token
 ├── data/
 │   └── demo_data.csv    # 5 synthetic narratives with demographics
 └── results/             # Pipeline outputs will be written here
@@ -234,27 +238,29 @@ demo/
 
 2. Run the PREVIA pipeline:
 ```bash
-python src/code/previa_pipeline.py --config-dir ./demo --file-end-name demo_data --outcome clinical
+python src/previa_pipeline.py --config-dir ./demo/configs --file-end-name demo_data --outcome clinical
 ```
 
 3. Or run the zero-shot baseline:
 ```bash
-python src/code/zero_shot_pipeline.py --config-dir ./demo --file-end-name demo_data --outcome clinical --llm mistral_large
+python src/zero_shot_pipeline.py --config-dir ./demo/configs --file-end-name demo_data --outcome clinical --llm mistral_large
 ```
 
 ### Expected output
 
-The pipeline will produce CSV files in `demo/results/` containing structured risk assessments for each of the 5 synthetic participants. Expected runtime on a single NVIDIA A100 80 GB GPU is approximately 15-30 minutes for the full three-layer pipeline, or 5-10 minutes for the zero-shot baseline.
+The pipeline will produce CSV files in `demo/results/` containing structured risk assessments for each of the 4 synthetic participants. Expected runtime on three NVIDIA A100 80 GB GPUs is approximately 15-30 minutes for the full three-layer pipeline, or 5-10 minutes for the zero-shot baseline.
 
 ---
 
 ## Reproducing manuscript results
 
-The results reported in the manuscript were generated using the full clinical cohort (N=145) recruited from emergency departments in the New York City area. This dataset cannot be shared publicly due to participant privacy protections under IRB protocol `[IRB protocol number]`.
+The results reported in the manuscript were generated using the full clinical cohort (N=145) recruited from emergency departments in the New York City area. This dataset cannot be shared publicly due to participant privacy protections under IRB protocol.
 
 The `demo/` dataset is provided to verify that the pipeline installs and runs correctly. It is not intended to reproduce the quantitative results reported in the paper.
 
-Requests for access to the clinical dataset can be directed to `[corresponding author email]`.
+The code is released for non-commercial research purposes only; any use of the code or derivative works must cite the present study.
+
+Requests for access to the clinical dataset can be directed to `katharina.schultebraucks@nyulangone.org`.
 
 ---
 

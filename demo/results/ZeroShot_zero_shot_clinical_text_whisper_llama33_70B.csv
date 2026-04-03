@@ -1,0 +1,9 @@
+record_id,model,zero_shot
+1001,llama33_70B,"PTSD risk score: ""60""
+Explanation: Female sex, young age, and reported symptoms of reexperiencing and arousal, as indicated by flinching and racing heart in response to loud noises and replaying the accident, are associated with higher future PTSD risk."
+1002,llama33_70B,"PTSD risk score: ""80""
+Explanation: Male patient's recent physical assault, bruised ribs, nightmares, hypervigilance, and avoidance behaviors indicate high risk of developing PTSD."
+1003,llama33_70B,"PTSD risk score: ""60""
+Explanation: Male patient's narrative indicates early post-traumatic stress symptoms, including anxiety, excessive startle response, and concentration difficulties, with moderate trauma severity and no reported prior mental health issues or previous traumas."
+1004,llama33_70B,"PTSD risk score: ""60""
+Explanation: Male patient's reported numbness, detachment, and loss of interest, combined with peri-traumatic dissociation symptoms, indicate a moderate to high risk of developing PTSD."
