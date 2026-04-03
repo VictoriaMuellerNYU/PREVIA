@@ -258,9 +258,12 @@ The results reported in the manuscript were generated using the full clinical co
 
 The `demo/` dataset is provided to verify that the pipeline installs and runs correctly. It is not intended to reproduce the quantitative results reported in the paper.
 
-The code is released for non-commercial research purposes only; any use of the code or derivative works must cite the present study.
-
 Requests for access to the clinical dataset can be directed to `katharina.schultebraucks@nyulangone.org`.
+
+---
+
+## Code usage
+The code is released for non-commercial research purposes only; any use of the code or derivative works must cite the present study.
 
 ---
 
