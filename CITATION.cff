@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the article and the software."
+title: "LLM Ensemble PREVIA Predicts Future PTSD Risk from Emergency Department Trauma Narratives with Expert-Level Accuracy"
+authors:
+  - family-names: Mueller
+    given-names: Victoria
+    affiliation: "New York University Grossman School of Medicine"
+  - family-names: Schultebraucks
+    given-names: Katharina
+    affiliation: "New York University Grossman School of Medicine"
+version: 1.0.0
+date-released: 2026-XX-XX
+url: "https://github.com/VictoriaMuellerNYU/PREVIA"
+license: MIT
+doi: 10.5281/zenodo.XXXXXXX
+preferred-citation:
+  type: article
+  title: "[full paper title]"
+  authors:
+    - family-names: Mueller
+      given-names: Victoria
+    - family-names: Schultebraucks
+      given-names: Katharina
+  journal: "Nature Communications"
+  year: 2026
+  doi: 10.1038/XXXXX
