@@ -265,6 +265,24 @@ Requests for access to the clinical dataset can be directed to `katharina.schult
 ## Code usage
 The code is released for non-commercial research purposes only; any use of the code or derivative works must cite the present study.
 
+## How to cite
+
+If you use PREVIA in your research, please cite both the paper and the 
+archived code.
+
+**Paper:**
+
+> [Author list]. [full paper title]. [Journal]
+> (2026). https://doi.org/[paper-DOI]
+
+**Code (this repository):**
+
+> [Author list]. VictoriaMuellerNYU/PREVIA: v1.0.0 (2026). Zenodo. 
+> https://doi.org/[zenodo-DOI]
+
+A machine-readable citation is available in [`CITATION.cff`](CITATION.cff), 
+and GitHub will render a "Cite this repository" button from it.
+
 ---
 
 ## Output
