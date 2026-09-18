@@ -277,8 +277,8 @@ archived code.
 
 **Code (this repository):**
 
-> Mueller, V., & Schultebraucks, K. (2026). LLM Ensemble PREVIA Predicts Future PTSD Risk from Emergency Department Trauma Narratives with Expert-Level Accuracy (Version v1.0.1) [Computer software].
-> [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22833732.svg)](https://doi.org/10.5281/zenodo.22833732)
+> Mueller, V., & Schultebraucks, K. (2026). LLM Ensemble PREVIA Predicts Future PTSD Risk from Emergency Department Trauma Narratives with Expert-Level Accuracy (Version v1.0.2) [Computer software].
+> [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22834182.svg)](https://doi.org/10.5281/zenodo.22834182)
 
 A machine-readable citation is available in [`CITATION.cff`](CITATION.cff), 
 and GitHub will render a "Cite this repository" button from it.
